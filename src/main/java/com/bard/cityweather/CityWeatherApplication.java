@@ -1,4 +1,4 @@
-package com.example.cityweather;
+package com.bard.cityweather;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

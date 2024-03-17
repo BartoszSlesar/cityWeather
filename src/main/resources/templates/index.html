@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+<head>
+    <meta charset="UTF-8">
+    <title>Harry Potter Spells</title>
+</head>
+<body>
+<h1 class="text-center p-lg-3 p-md-4 py-3">Pogoda w Polsce</h1>
+<form th:action="@{/weather}" th:object="${String}" method="get"
+      class="form-horizontal" id="search-weather-form">
+    <div class="control-group" id="city">
+
+        <div class="col-sm-10 p-2">
+            <label class="col-sm-2 control-label py-2">Podaj Miasto</label>
+            <input type="text" class="form-control" size="30"
+                   maxlength="80" name="city"/>
+            <button type="submit" class="btn btn-primary">Sprawdź Pogodę</button>
+        </div>
+    </div>
+
+
+
+
+</form>
+</body>
+</html>
